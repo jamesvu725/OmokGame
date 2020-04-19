@@ -24,3 +24,8 @@ You can download Qt using this link: https://www.qt.io/download.
 3. Open the Omok folder.
 4. Run the game through Omok.exe.
 
+## File Descriptions
+1. Omok.pro - project file. Specifies the what Qt libraries, configuration language, source code, header files, and target path are used.
+2. main.cpp - source file. Has main function which starts the application, calls Board, and displays Board on the application.
+3. board.h - header file. Holds the declarations of the Board class and most of the libraries used.
+4. board.cpp - source file. Has all the Board functions and constructor. It can generate the board with all its buttons, check for valid moves when the button is clicked, check for the 2 rules, and pick the computer's move with the AI which checks for certain patterns.
