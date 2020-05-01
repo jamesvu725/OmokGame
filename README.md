@@ -1,7 +1,7 @@
 # OmokGame
 This is a desktop application of the game Omok which is a variation of the game Gomoku. It is a connect 5 tic-tac-toe game on a 15x15 grid. It has 2 rules: 
 1. Overline: You cannot win if you connect 6 or more. it must be connect 5 to win.
-2. Double three: You cannot move in a spot where you create two open threes at once. An open three follows the patterns: OXXXO, OXXOX, or OXOXX.
+2. Double three: You cannot move in a spot where you create two open threes at once. An open three follows the patterns: OXXXO, OXXOXO, or OXOXXO.
 ## Requirements
 1. Windows 10 operating system
 2. Qt Creator 4.11.1 (Community)
