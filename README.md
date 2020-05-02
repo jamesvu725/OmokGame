@@ -19,7 +19,7 @@ You can download Qt using this link: https://www.qt.io/download.
 7. If you want to play again, you have to close the application and press run again.
 
 ### Or if you do not want to download Qt to build and run the program:
-1. Go to https://www.dropbox.com/sh/vabputybywy2af8/AACuOTQJ8IwJWDw0Ay3S-QwMa?dl=0. (I'm using Dropbox because the dll files were too big to upload onto GitHub.)
+1. Go to https://www.dropbox.com/sh/0pq9rjoe1qoyd8h/AACk5yeL_s0mExnC47aEvR5na?dl=0. (I'm using Dropbox because the dll files were too big to upload onto GitHub.)
 2. Download the Omok folder which holds the Omok.exe and all its dependencies.
 3. Open the Omok folder.
 4. Run the game through Omok.exe.
