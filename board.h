@@ -40,7 +40,7 @@ private:
     bool checkDoubleThreesVert(int, int, int);
     bool checkDoubleThreesDiag1(int, int, int);
     bool checkDoubleThreesDiag2(int, int, int);
-    void changeBackground(int, int);
+    void changeBackground(int, int, QString);
     int computerAI();
     void weighHori();
     void weighVert();

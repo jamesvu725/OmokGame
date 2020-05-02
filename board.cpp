@@ -29,158 +29,137 @@ void Board::createPatterns() {
     open3.append({0,1,1,0,1,0});
     open3.append({0,1,0,1,1,0});
     // winning move
-    patterns.append({3,2,2,2,2,   65536});
-    patterns.append({2,3,2,2,2,   65536});
-    patterns.append({2,2,3,2,2,   65536});
-    patterns.append({2,2,2,3,2,   65536});
-    patterns.append({2,2,2,2,3,   65536});
+    patterns.append({3,2,2,2,2,   16384});
+    patterns.append({2,3,2,2,2,   16384});
+    patterns.append({2,2,3,2,2,   16384});
+    patterns.append({2,2,2,3,2,   16384});
+    patterns.append({2,2,2,2,3,   16384});
     // block win
-    patterns.append({3,1,1,1,1,   16384});
-    patterns.append({1,3,1,1,1,   16384});
-    patterns.append({1,1,3,1,1,   16384});
-    patterns.append({1,1,1,3,1,   16384});
-    patterns.append({1,1,1,1,3,   16384});
+    patterns.append({3,1,1,1,1,   8192});
+    patterns.append({1,3,1,1,1,   8192});
+    patterns.append({1,1,3,1,1,   8192});
+    patterns.append({1,1,1,3,1,   8192});
+    patterns.append({1,1,1,1,3,   8192});
     // create open 4
-    patterns.append({0,3,2,2,2,0, 4096});
-    patterns.append({0,2,3,2,2,0, 4096});
-    patterns.append({0,2,2,3,2,0, 4096});
-    patterns.append({0,2,2,2,3,0, 4096});
+    patterns.append({0,3,2,2,2,0, 2048});
+    patterns.append({0,2,3,2,2,0, 2048});
+    patterns.append({0,2,2,3,2,0, 2048});
+    patterns.append({0,2,2,2,3,0, 2048});
     // block open 4
-    patterns.append({0,3,1,1,1,0, 2048});
-    patterns.append({0,1,3,1,1,0, 2048});
-    patterns.append({0,1,1,3,1,0, 2048});
-    patterns.append({0,1,1,1,3,0, 2048});
+    patterns.append({0,3,1,1,1,0, 1024});
+    patterns.append({0,1,3,1,1,0, 1024});
+    patterns.append({0,1,1,3,1,0, 1024});
+    patterns.append({0,1,1,1,3,0, 1024});
     // create open 3
-    patterns.append({0,0,3,2,2,0, 512});
-    patterns.append({0,0,2,3,2,0, 512});
-    patterns.append({0,0,2,2,3,0, 512});
-    patterns.append({0,3,2,2,0,0, 512});
-    patterns.append({0,2,3,2,0,0, 512});
-    patterns.append({0,2,2,3,0,0, 512});
-    patterns.append({0,3,0,2,2,0, 512});
-    patterns.append({0,2,0,3,2,0, 512});
-    patterns.append({0,2,0,2,3,0, 512});
-    patterns.append({0,3,2,0,2,0, 512});
-    patterns.append({0,2,3,0,2,0, 512});
-    patterns.append({0,2,2,0,3,0, 512});
+    patterns.append({0,0,3,2,2,0, 256});
+    patterns.append({0,0,2,3,2,0, 256});
+    patterns.append({0,0,2,2,3,0, 256});
+    patterns.append({0,3,2,2,0,0, 256});
+    patterns.append({0,2,3,2,0,0, 256});
+    patterns.append({0,2,2,3,0,0, 256});
+    patterns.append({0,3,0,2,2,0, 256});
+    patterns.append({0,2,0,3,2,0, 256});
+    patterns.append({0,2,0,2,3,0, 256});
+    patterns.append({0,3,2,0,2,0, 256});
+    patterns.append({0,2,3,0,2,0, 256});
+    patterns.append({0,2,2,0,3,0, 256});
     // block open 3
-    patterns.append({0,0,3,1,1,0, 256});
-    patterns.append({0,0,1,3,1,0, 256});
-    patterns.append({0,0,1,1,3,0, 256});
-    patterns.append({0,3,1,1,0,0, 256});
-    patterns.append({0,1,3,1,0,0, 256});
-    patterns.append({0,1,1,3,0,0, 256});
-    patterns.append({0,3,0,1,1,0, 256});
-    patterns.append({0,1,0,3,1,0, 256});
-    patterns.append({0,1,0,1,3,0, 256});
-    patterns.append({0,3,1,0,1,0, 256});
-    patterns.append({0,1,3,0,1,0, 256});
-    patterns.append({0,1,1,0,3,0, 256});
+    patterns.append({0,0,3,1,1,0, 128});
+    patterns.append({0,0,1,3,1,0, 128});
+    patterns.append({0,0,1,1,3,0, 128});
+    patterns.append({0,3,1,1,0,0, 128});
+    patterns.append({0,1,3,1,0,0, 128});
+    patterns.append({0,1,1,3,0,0, 128});
+    patterns.append({0,3,0,1,1,0, 128});
+    patterns.append({0,1,0,3,1,0, 128});
+    patterns.append({0,1,0,1,3,0, 128});
+    patterns.append({0,3,1,0,1,0, 128});
+    patterns.append({0,1,3,0,1,0, 128});
+    patterns.append({0,1,1,0,3,0, 128});
     // create 3
-    patterns.append({2,2,3,0,0,   128});
-    patterns.append({2,2,0,3,0,   128});
-    patterns.append({2,2,0,0,3,   128});
-    patterns.append({2,3,2,0,0,   128});
-    patterns.append({2,0,2,3,0,   128});
-    patterns.append({2,0,2,0,3,   128});
-    patterns.append({2,3,0,2,0,   128});
-    patterns.append({2,0,3,2,0,   128});
-    patterns.append({2,0,0,2,3,   128});
-    patterns.append({2,3,0,0,2,   128});
-    patterns.append({2,0,3,0,2,   128});
-    patterns.append({2,0,0,3,2,   128});
-    patterns.append({3,2,2,0,0,   128});
-    patterns.append({0,2,2,3,0,   128});
-    patterns.append({0,2,2,0,3,   128});
-    patterns.append({3,2,0,2,0,   128});
-    patterns.append({0,2,3,2,0,   128});
-    patterns.append({0,2,0,2,3,   128});
-    patterns.append({3,2,0,0,2,   128});
-    patterns.append({0,2,3,0,2,   128});
-    patterns.append({0,2,0,3,2,   128});
-    patterns.append({3,0,2,2,0,   128});
-    patterns.append({0,3,2,2,0,   128});
-    patterns.append({0,0,2,2,3,   128});
-    patterns.append({3,0,2,0,2,   128});
-    patterns.append({0,3,2,0,2,   128});
-    patterns.append({0,0,2,3,2,   128});
-    patterns.append({2,2,3,0,     32});
-    patterns.append({2,2,0,3,     32});
-    patterns.append({2,3,2,0,     32});
-    patterns.append({2,0,2,3,     32});
-    patterns.append({2,3,0,2,     32});
-    patterns.append({2,0,3,2,     32});
-    patterns.append({3,2,2,0,     32});
-    patterns.append({0,2,2,3,     32});
-    patterns.append({3,2,0,2,     32});
-    patterns.append({0,2,3,2,     32});
-    patterns.append({3,0,2,2,     32});
-    patterns.append({0,3,2,2,     32});
-    patterns.append({2,2,3,       4});
-    patterns.append({2,3,2,       4});
-    patterns.append({3,2,2,       4});
+    patterns.append({2,2,3,0,0,   32});
+    patterns.append({2,2,0,3,0,   32});
+    patterns.append({2,2,0,0,3,   32});
+    patterns.append({2,3,2,0,0,   32});
+    patterns.append({2,0,2,3,0,   32});
+    patterns.append({2,0,2,0,3,   32});
+    patterns.append({2,3,0,2,0,   32});
+    patterns.append({2,0,3,2,0,   32});
+    patterns.append({2,0,0,2,3,   32});
+    patterns.append({2,3,0,0,2,   32});
+    patterns.append({2,0,3,0,2,   32});
+    patterns.append({2,0,0,3,2,   32});
+    patterns.append({3,2,2,0,0,   32});
+    patterns.append({0,2,2,3,0,   32});
+    patterns.append({0,2,2,0,3,   32});
+    patterns.append({3,2,0,2,0,   32});
+    patterns.append({0,2,3,2,0,   32});
+    patterns.append({0,2,0,2,3,   32});
+    patterns.append({3,2,0,0,2,   32});
+    patterns.append({0,2,3,0,2,   32});
+    patterns.append({0,2,0,3,2,   32});
+    patterns.append({3,0,2,2,0,   32});
+    patterns.append({0,3,2,2,0,   32});
+    patterns.append({0,0,2,2,3,   32});
+    patterns.append({3,0,2,0,2,   32});
+    patterns.append({0,3,2,0,2,   32});
+    patterns.append({0,0,2,3,2,   32});
+
     // block 3
-    patterns.append({1,1,3,0,0,   64});
-    patterns.append({1,1,0,3,0,   64});
-    patterns.append({1,1,0,0,3,   64});
-    patterns.append({1,3,1,0,0,   64});
-    patterns.append({1,0,1,3,0,   64});
-    patterns.append({1,0,1,0,3,   64});
-    patterns.append({1,3,0,1,0,   64});
-    patterns.append({1,0,3,1,0,   64});
-    patterns.append({1,0,0,1,3,   64});
-    patterns.append({1,3,0,0,1,   64});
-    patterns.append({1,0,3,0,1,   64});
-    patterns.append({1,0,0,3,1,   64});
-    patterns.append({3,1,1,0,0,   64});
-    patterns.append({0,1,1,3,0,   64});
-    patterns.append({0,1,1,0,3,   64});
-    patterns.append({3,1,0,1,0,   64});
-    patterns.append({0,1,3,1,0,   64});
-    patterns.append({0,1,0,1,3,   64});
-    patterns.append({3,1,0,0,1,   64});
-    patterns.append({0,1,3,0,1,   64});
-    patterns.append({0,1,0,3,1,   64});
-    patterns.append({3,0,1,1,0,   64});
-    patterns.append({0,3,1,1,0,   64});
-    patterns.append({0,0,1,1,3,   64});
-    patterns.append({3,0,1,0,1,   64});
-    patterns.append({0,3,1,0,1,   64});
-    patterns.append({0,0,1,3,1,   64});
-    patterns.append({1,1,3,0,     16});
-    patterns.append({1,1,0,3,     16});
-    patterns.append({1,3,1,0,     16});
-    patterns.append({1,0,1,3,     16});
-    patterns.append({1,3,0,1,     16});
-    patterns.append({1,0,3,1,     16});
-    patterns.append({3,1,1,0,     16});
-    patterns.append({0,1,1,3,     16});
-    patterns.append({3,1,0,1,     16});
-    patterns.append({0,1,3,1,     16});
-    patterns.append({3,0,1,1,     16});
-    patterns.append({0,3,1,1,     16});
-    patterns.append({1,1,3,       4});
-    patterns.append({1,3,1,       4});
-    patterns.append({3,1,1,       4});
+    patterns.append({1,1,3,0,0,   16});
+    patterns.append({1,1,0,3,0,   16});
+    patterns.append({1,1,0,0,3,   16});
+    patterns.append({1,3,1,0,0,   16});
+    patterns.append({1,0,1,3,0,   16});
+    patterns.append({1,0,1,0,3,   16});
+    patterns.append({1,3,0,1,0,   16});
+    patterns.append({1,0,3,1,0,   16});
+    patterns.append({1,0,0,1,3,   16});
+    patterns.append({1,3,0,0,1,   16});
+    patterns.append({1,0,3,0,1,   16});
+    patterns.append({1,0,0,3,1,   16});
+    patterns.append({3,1,1,0,0,   16});
+    patterns.append({0,1,1,3,0,   16});
+    patterns.append({0,1,1,0,3,   16});
+    patterns.append({3,1,0,1,0,   16});
+    patterns.append({0,1,3,1,0,   16});
+    patterns.append({0,1,0,1,3,   16});
+    patterns.append({3,1,0,0,1,   16});
+    patterns.append({0,1,3,0,1,   16});
+    patterns.append({0,1,0,3,1,   16});
+    patterns.append({3,0,1,1,0,   16});
+    patterns.append({0,3,1,1,0,   16});
+    patterns.append({0,0,1,1,3,   16});
+    patterns.append({3,0,1,0,1,   16});
+    patterns.append({0,3,1,0,1,   16});
+    patterns.append({0,0,1,3,1,   16});
+
     // create 2
     patterns.append({2,3,0,0,0,   4});
     patterns.append({2,0,3,0,0,   4});
     patterns.append({2,0,0,3,0,   4});
     patterns.append({2,0,0,0,3,   4});
-    patterns.append({2,3,0,0,     3});
-    patterns.append({2,0,3,0,     3});
+    patterns.append({3,2,0,0,0,   4});
+    patterns.append({0,2,3,0,0,   8});
+    patterns.append({0,2,0,3,0,   8});
+    patterns.append({0,2,0,0,3,   4});
+    patterns.append({3,0,2,0,0,   4});
+    patterns.append({0,3,2,0,0,   8});
+    patterns.append({0,0,2,3,0,   8});
+    patterns.append({0,0,2,0,3,   4});
+    patterns.append({3,0,0,2,0,   4});
+    patterns.append({0,3,0,2,0,   8});
+    patterns.append({0,0,3,2,0,   8});
+    patterns.append({0,0,0,2,3,   4});
+    patterns.append({3,0,0,0,2,   4});
+    patterns.append({0,3,0,0,2,   4});
+    patterns.append({0,0,3,0,2,   4});
+    patterns.append({0,0,0,3,2,   4});
     patterns.append({2,0,0,3,     3});
-    patterns.append({2,3,0,       2});
     patterns.append({2,0,3,       2});
     patterns.append({2,3,         1});
-    patterns.append({0,0,0,3,2,   4});
-    patterns.append({0,0,3,0,2,   4});
-    patterns.append({0,3,0,0,2,   4});
     patterns.append({3,0,0,0,2,   4});
-    patterns.append({0,0,3,2,     3});
-    patterns.append({0,3,0,2,     3});
     patterns.append({3,0,0,2,     3});
-    patterns.append({0,3,2,       2});
     patterns.append({3,0,2,       2});
     patterns.append({3,2,         1});
     // block 2
@@ -188,20 +167,27 @@ void Board::createPatterns() {
     patterns.append({1,0,3,0,0,   4});
     patterns.append({1,0,0,3,0,   4});
     patterns.append({1,0,0,0,3,   4});
-    patterns.append({1,3,0,0,     3});
-    patterns.append({1,0,3,0,     3});
+    patterns.append({3,1,0,0,0,   4});
+    patterns.append({0,1,3,0,0,   8});
+    patterns.append({0,1,0,3,0,   8});
+    patterns.append({0,1,0,0,3,   4});
+    patterns.append({3,0,1,0,0,   4});
+    patterns.append({0,3,1,0,0,   8});
+    patterns.append({0,0,1,3,0,   8});
+    patterns.append({0,0,1,0,3,   4});
+    patterns.append({3,0,0,1,0,   4});
+    patterns.append({0,3,0,1,0,   8});
+    patterns.append({0,0,3,1,0,   8});
+    patterns.append({0,0,0,1,3,   4});
+    patterns.append({3,0,0,0,1,   4});
+    patterns.append({0,3,0,0,1,   4});
+    patterns.append({0,0,3,0,1,   4});
+    patterns.append({0,0,0,3,1,   4});
     patterns.append({1,0,0,3,     3});
-    patterns.append({1,3,0,       2});
     patterns.append({1,0,3,       2});
     patterns.append({1,3,         1});
-    patterns.append({0,0,0,3,1,   4});
-    patterns.append({0,0,3,0,1,   4});
-    patterns.append({0,3,0,0,1,   4});
     patterns.append({3,0,0,0,1,   4});
-    patterns.append({0,0,3,1,     3});
-    patterns.append({0,3,0,1,     3});
     patterns.append({3,0,0,1,     3});
-    patterns.append({0,3,1,       2});
     patterns.append({3,0,1,       2});
     patterns.append({3,1,         1});
 }
@@ -234,9 +220,11 @@ void Board::buttonClicked(int id) {
     if (checkValidMove(id)) {
         if (playerTurn) { // sets text to X for player and updates grid
             buttons[id]->setText("X");
+            changeBackground(id/15,id%15,"cyan");
             updateGrid(id, 1);
         } else { // sets text to O for player and and updates grid
             buttons[id]->setText("O");
+            changeBackground(id/15,id%15,"red");
             updateGrid(id, 2);
         }
         // if win, then finish game
@@ -319,7 +307,7 @@ bool Board::checkFiveHori() {
                 // returns true if 5 in a row with no overline
                 if (flag) {
                     for (int k = 0; k < 5; ++k) {
-                        changeBackground(i, j+k);
+                        changeBackground(i, j+k, "yellow");
                     }
                     return true;
                 }
@@ -357,7 +345,7 @@ bool Board::checkFiveVert() {
                 // returns true if 5 in a row with no overline
                 if (flag) {
                     for (int k = 0; k < 5; ++k) {
-                        changeBackground(i+k, j);
+                        changeBackground(i+k, j, "yellow");
                     }
                     return true;
                 }
@@ -395,7 +383,7 @@ bool Board::checkFiveDiag1() {
                 // returns true if 5 in a row with no overline
                 if (flag) {
                     for (int k = 0; k < 5; ++k) {
-                        changeBackground(i+k, j+k);
+                        changeBackground(i+k, j+k, "yellow");
                     }
                     return true;
                 }
@@ -433,7 +421,7 @@ bool Board::checkFiveDiag2() {
                 // returns true if 5 in a row with no overline
                 if (flag) {
                     for (int k = 0; k < 5; ++k) {
-                        changeBackground(i-k, j+k);
+                        changeBackground(i-k, j+k, "yellow");
                     }
                     return true;
                 }
@@ -604,8 +592,8 @@ bool Board::checkDoubleThreesDiag2(int x, int y, int state) {
 }
 
 // changes background color for five in a row
-void Board::changeBackground(int x, int y) {
-    buttons[x*15+y]->setStyleSheet("background-color:yellow");
+void Board::changeBackground(int x, int y, QString color) {
+    buttons[x*15+y]->setStyleSheet("background-color:" + color);
 }
 
 // computer AI chooses a button
